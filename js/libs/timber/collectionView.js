@@ -36,16 +36,14 @@ define([
 				if (!this._views) {
 					this._views = [];
 				}
-				options.collection.each(this._renderView, this);
+				options.target.append (options.collection.map(this._renderView, this));
 
 			}
 			return this;
 		},
 
 		_renderView: function(model) {
-			this._renderOptions.target.append(
-				this.createView(model, this._renderOptions.args || {}).render().$el
-			);
+			return this.createView(model, this._renderOptions.args || {}).render().$el;
 		},
 
 		createView: function(model, options) {
@@ -61,13 +59,7 @@ define([
 		// removes views created by the renderCollection method
 		disposeViews: function () { 
 			_.invoke(this._views, 'destroy');
-			this._views = [];
-		},
-
-		dispose: function () {
-			this.undelegateEvents();
-			this.stopListening();
-			this.remove();
+			this._views && this._views.length = 0;
 		},
 
 		destroy: function () {
