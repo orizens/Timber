@@ -1,7 +1,9 @@
 # Timber
 
-Timber is a lite weight application framework for starting projects with Backbone.js &amp; Requirejs.
-It's solves few challenages and take in to an assumption few repeated decisions.
+Timber is a lite weight application framework boilerplate for starting projects with Backbone.js &amp; Requirejs.
+It's solves few challenages and take into an assumption few repeated decisions in single page application design.
+
+Status: Timber is in beta stage development.
 
 ## Goals
 One of the goals in timber is to make the deveoper focus on the design of the application, structure and small pieces of reusable modules.
