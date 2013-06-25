@@ -5,18 +5,17 @@ require.config({
 
     paths: {
         //- application aliases
-        libs: '../libs',
-        config: '../config',
-        models: '../models',
+        libs: 'libs',
+        config: 'config',
+        models: 'models',
         //- libraries
-        jquery:'../libs/jquery/jquery-min',
-        zepto: '../libs/zepto/zepto.min',
-        underscore:'../libs/underscore/underscore',
-        backbone:'../libs/backbone/backbone',
-        bootstrap:'../libs/bootstrap/bootstrap',
-        text:'../libs/require/text',
-        timber: '../libs/timber/timber'
-        // api: '../../mock'
+        jquery:'libs/jquery/jquery-min',
+        underscore:'libs/underscore/underscore',
+        backbone:'libs/backbone/backbone',
+        bootstrap:'libs/bootstrap/bootstrap',
+        text:'libs/require/text',
+        timber: 'libs/timber/timber'
+        // api: '../mock'
     },
 
     shim: {

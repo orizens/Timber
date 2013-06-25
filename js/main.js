@@ -1,8 +1,8 @@
 require([
 	'timber',
 	'models/ApplicationModel',
-	'appRouter',
-	'../views/ApplicationView'
+	'router',
+	'views/ApplicationView'
 ],
 
 function (Timber, ApplicationModel, ApplicationRouter, ApplicationView) {

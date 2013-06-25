@@ -13,6 +13,10 @@ define([
 			// });
 
 			// this.appendViews();
+		},
+
+		render: function() {
+			return this;
 		}
 	});
 	return ReportsView;

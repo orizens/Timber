@@ -34,7 +34,8 @@ define([
 			}
 			this.updateIdentifier();
 			this.model.setResource(resource);
-			require(['../views/' + resource.view], _.bind(this.render, this));
+			// require([resource.view], _.bind(this.render, this));
+			this.render(resource.view);
 		},
 
 		render: function(view) {
@@ -43,9 +44,8 @@ define([
 			this.currentView = new view({
 				model: this.model
 			});
-			this.currentView.$el.addClass('span12');
 
-			this.$target.empty().append( this.currentView.render().el );
+			this.$target.append( this.currentView.render().el );
 			this.model.fetchResources();
 			return this;
 		},

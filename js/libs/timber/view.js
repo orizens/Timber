@@ -28,16 +28,6 @@ define([
 			options.model = options.model || this.model;
 			options.template = options.template || this.template;
 
-			// adding 'translate' as a method to model so any template can reference it directly:
-			//
-			//    <div><%= translate('my.username.key') %></div>
-			//
-			// _.extend(options.model, {
-			// 	translate: function(key) {
-			// 		return Timber.translate(key);
-			// 	}
-			// });
-
 			if (this.template && this.model) {
 				html = _.template(options.template, options.model.toJSON());
 				if (options.keep) {
