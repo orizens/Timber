@@ -23,3 +23,7 @@ Read this [blog post about the front end architecture concepts of Timber](http:/
 6. Easily define module per route
 7. easily define static views that persists with the application layout (i.e - you may decide that a top navigation bar stays on all application pages)
 8. Keeps backbone's terminology to a minimum (in use: Model, View, Collection with CollectionView as an extension)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/orizens/timber/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
